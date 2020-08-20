@@ -15,30 +15,35 @@ module reg_file_tb();
  initial
 	 begin
 		 clk <= 1'd0;
-		 reset <= 1'd0;
+		 reset <= 1'd1;
 		 WE3 <= 1'd0;
 		 A3 <= 5'd0;
 		 WD3 <= 32'd0;
 		 
+		 
 		 #20 // faz o RD1 = valor do segundo reg. e RD2 = valor primeiro reg. 
 		 A1 <= 5'd1;
 		 A2 <= 5'd0;
+		 reset <= 1'b1;
 		 
-		 #30 // vai escrever o numero 9 no tereceiro registrador 
+		 #20 // vai escrever o numero 9 no tereceiro registrador 
 		 WE3 <= 1'd1;
 		 WD3 <= 32'd9;
 		 A3 <= 5'd2;
 		 
-		 #10 // faz o RD1 = 5 (valor do terceiro reg.) 
+		 #20 // faz o RD1 = 5 (valor do terceiro reg.) 
 		 WE3 <= 1'd0;
 		 A1 <= 5'd2;
 		 
-		 #10 // nao vai escrever no setimo reg. pq o enable de escrita esta desativado
+		 #20 // nao vai escrever no setimo reg. pq o enable de escrita esta desativado
 		 WD3 <= 32'd6;
 		 A3 <= 5'd6;
 		 
-		 #10 // faz o RD2 = 0, pq nao escreveu 6 nesse endereço
+		 #20 // faz o RD2 = 0, pq nao escreveu 6 nesse endereço
 		 A2 <= 5'd6;
+		 
+		 #20 // zera todos os registradores
+		 reset <= 1'b0;
 	end
  
 reg_file reg_file ( 

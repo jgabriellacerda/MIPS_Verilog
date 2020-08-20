@@ -1,0 +1,75 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do MIPS_Verilog_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog {C:/Users/Gabriel/Documents/IC/MIPS_Verilog/reg_file.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:36 on Aug 20,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog" C:/Users/Gabriel/Documents/IC/MIPS_Verilog/reg_file.v 
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# End time: 17:15:36 on Aug 20,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog {C:/Users/Gabriel/Documents/IC/MIPS_Verilog/reg_file_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:36 on Aug 20,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog" C:/Users/Gabriel/Documents/IC/MIPS_Verilog/reg_file_tb.v 
+# -- Compiling module reg_file_tb
+# 
+# Top level modules:
+# 	reg_file_tb
+# End time: 17:15:36 on Aug 20,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  reg_file_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" reg_file_tb 
+# Start time: 17:15:36 on Aug 20,2020
+# Loading work.reg_file_tb
+# Loading work.reg_file
+# 
+# do C:/Users/Gabriel/Documents/IC/MIPS_Verilog/simulation/modelsim/setup.do
+# do wave.do
+# onerror {resume}
+# quietly WaveActivateNextPane {} 0
+# add wave -noupdate /reg_file_tb/reg_file/clk
+# add wave -noupdate /reg_file_tb/reg_file/WE3
+# add wave -noupdate /reg_file_tb/reg_file/reset
+# add wave -noupdate -radix decimal /reg_file_tb/reg_file/A1
+# add wave -noupdate -radix decimal /reg_file_tb/reg_file/A2
+# add wave -noupdate -radix decimal /reg_file_tb/reg_file/A3
+# add wave -noupdate /reg_file_tb/reg_file/WD3
+# add wave -noupdate -radix decimal /reg_file_tb/reg_file/RD1
+# add wave -noupdate -radix decimal /reg_file_tb/reg_file/RD2
+# add wave -noupdate -radix decimal -childformat {{{/reg_file_tb/reg_file/registradores[31]} -radix decimal} {{/reg_file_tb/reg_file/registradores[30]} -radix decimal} {{/reg_file_tb/reg_file/registradores[29]} -radix decimal} {{/reg_file_tb/reg_file/registradores[28]} -radix decimal} {{/reg_file_tb/reg_file/registradores[27]} -radix decimal} {{/reg_file_tb/reg_file/registradores[26]} -radix decimal} {{/reg_file_tb/reg_file/registradores[25]} -radix decimal} {{/reg_file_tb/reg_file/registradores[24]} -radix decimal} {{/reg_file_tb/reg_file/registradores[23]} -radix decimal} {{/reg_file_tb/reg_file/registradores[22]} -radix decimal} {{/reg_file_tb/reg_file/registradores[21]} -radix decimal} {{/reg_file_tb/reg_file/registradores[20]} -radix decimal} {{/reg_file_tb/reg_file/registradores[19]} -radix decimal} {{/reg_file_tb/reg_file/registradores[18]} -radix decimal} {{/reg_file_tb/reg_file/registradores[17]} -radix decimal} {{/reg_file_tb/reg_file/registradores[16]} -radix decimal} {{/reg_file_tb/reg_file/registradores[15]} -radix decimal} {{/reg_file_tb/reg_file/registradores[14]} -radix decimal} {{/reg_file_tb/reg_file/registradores[13]} -radix decimal} {{/reg_file_tb/reg_file/registradores[12]} -radix decimal} {{/reg_file_tb/reg_file/registradores[11]} -radix decimal} {{/reg_file_tb/reg_file/registradores[10]} -radix decimal} {{/reg_file_tb/reg_file/registradores[9]} -radix decimal} {{/reg_file_tb/reg_file/registradores[8]} -radix decimal} {{/reg_file_tb/reg_file/registradores[7]} -radix decimal} {{/reg_file_tb/reg_file/registradores[6]} -radix decimal} {{/reg_file_tb/reg_file/registradores[5]} -radix decimal} {{/reg_file_tb/reg_file/registradores[4]} -radix decimal} {{/reg_file_tb/reg_file/registradores[3]} -radix decimal} {{/reg_file_tb/reg_file/registradores[2]} -radix decimal} {{/reg_file_tb/reg_file/registradores[1]} -radix decimal} {{/reg_file_tb/reg_file/registradores[0]} -radix decimal}} -expand -subitemconfig {{/reg_file_tb/reg_file/registradores[31]} {-radix decimal} {/reg_file_tb/reg_file/registradores[30]} {-radix decimal} {/reg_file_tb/reg_file/registradores[29]} {-radix decimal} {/reg_file_tb/reg_file/registradores[28]} {-radix decimal} {/reg_file_tb/reg_file/registradores[27]} {-radix decimal} {/reg_file_tb/reg_file/registradores[26]} {-radix decimal} {/reg_file_tb/reg_file/registradores[25]} {-radix decimal} {/reg_file_tb/reg_file/registradores[24]} {-radix decimal} {/reg_file_tb/reg_file/registradores[23]} {-radix decimal} {/reg_file_tb/reg_file/registradores[22]} {-radix decimal} {/reg_file_tb/reg_file/registradores[21]} {-radix decimal} {/reg_file_tb/reg_file/registradores[20]} {-radix decimal} {/reg_file_tb/reg_file/registradores[19]} {-radix decimal} {/reg_file_tb/reg_file/registradores[18]} {-radix decimal} {/reg_file_tb/reg_file/registradores[17]} {-radix decimal} {/reg_file_tb/reg_file/registradores[16]} {-radix decimal} {/reg_file_tb/reg_file/registradores[15]} {-radix decimal} {/reg_file_tb/reg_file/registradores[14]} {-radix decimal} {/reg_file_tb/reg_file/registradores[13]} {-radix decimal} {/reg_file_tb/reg_file/registradores[12]} {-radix decimal} {/reg_file_tb/reg_file/registradores[11]} {-radix decimal} {/reg_file_tb/reg_file/registradores[10]} {-radix decimal} {/reg_file_tb/reg_file/registradores[9]} {-radix decimal} {/reg_file_tb/reg_file/registradores[8]} {-radix decimal} {/reg_file_tb/reg_file/registradores[7]} {-radix decimal} {/reg_file_tb/reg_file/registradores[6]} {-radix decimal} {/reg_file_tb/reg_file/registradores[5]} {-radix decimal} {/reg_file_tb/reg_file/registradores[4]} {-radix decimal} {/reg_file_tb/reg_file/registradores[3]} {-radix decimal} {/reg_file_tb/reg_file/registradores[2]} {-radix decimal} {/reg_file_tb/reg_file/registradores[1]} {-radix decimal} {/reg_file_tb/reg_file/registradores[0]} {-radix decimal}} /reg_file_tb/reg_file/registradores
+# TreeUpdate [SetDefaultTree]
+# WaveRestoreCursors {{Cursor 1} {64586 ps} 0}
+# quietly wave cursor active 1
+# configure wave -namecolwidth 272
+# configure wave -valuecolwidth 100
+# configure wave -justifyvalue left
+# configure wave -signalnamewidth 0
+# configure wave -snapdistance 10
+# configure wave -datasetprefix 0
+# configure wave -rowmargin 4
+# configure wave -childrowmargin 2
+# configure wave -gridoffset 0
+# configure wave -gridperiod 1
+# configure wave -griddelta 40
+# configure wave -timeline 0
+# configure wave -timelineunits ns
+# update
+# WaveRestoreZoom {21097 ps} {99847 ps}
+# run 600 ns
+# End time: 17:17:16 on Aug 20,2020, Elapsed time: 0:01:40
+# Errors: 0, Warnings: 0
