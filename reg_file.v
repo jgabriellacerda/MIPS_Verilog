@@ -2,21 +2,21 @@
 
 module reg_file (
 						input clk, WE3, reset,        // WE : entrada de enable de escrita 
-						input  [0:4] A1, A2, A3,		// A1(rs) e A2 : entrada de leitura (endereço do reg de origem) - A3(rt) : entrada de escrita (endereço do destino)	
-						input signed  [0:31] WD3,		// WD3 : entrada de escrita de dados da mem. dados
-						output reg RD1, RD2				// RD1 E RD2 : saidas de dados
+						input  [4:0] A1, A2, A3,		// A1(rs) e A2 : entrada de leitura (endereço do reg de origem) - A3(rt) : entrada de escrita (endereço do destino)	
+						input signed  [31:0] WD3,		// WD3 : entrada de escrita de dados da mem. dados
+						output reg [31:0] RD1, RD2				// RD1 E RD2 : saidas de dados
 						)	;
 
 
 
-reg [31:0] registradores[31:0];
+reg [0:31] registradores[31:0];
 
-// inicialização de dois valorers para os registers 0 e 1 para teste
+// inicialização de dois valores para os registers 0 e 1 para teste
 
 initial 
 	begin
-	 registradores[5'b00000] = 32'b00000000000000000000000000000011;
-	 registradores[5'b00001] = 32'b00000000000000000000000000000101;
+	 registradores[5'b00000] = 32'b00000000000000000000000000000011; //3
+	 registradores[5'b00001] = 32'b00000000000000000000000000000101; //5
 	end
 
 
