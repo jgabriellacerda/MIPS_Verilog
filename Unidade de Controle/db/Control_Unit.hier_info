@@ -1,0 +1,24 @@
+|Control_Unit
+Op[26] => Decoder0.IN5
+Op[27] => Decoder0.IN4
+Op[28] => Decoder0.IN3
+Op[29] => Decoder0.IN2
+Op[30] => Decoder0.IN1
+Op[31] => Decoder0.IN0
+Funct[0] => Decoder1.IN5
+Funct[1] => Decoder1.IN4
+Funct[2] => Decoder1.IN3
+Funct[3] => Decoder1.IN2
+Funct[4] => Decoder1.IN1
+Funct[5] => Decoder1.IN0
+MemtoReg << MemtoReg.DB_MAX_OUTPUT_PORT_TYPE
+MemWrite << MemWrite.DB_MAX_OUTPUT_PORT_TYPE
+Branch << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+ALUControl[0] << Selector12.DB_MAX_OUTPUT_PORT_TYPE
+ALUControl[1] << Selector11.DB_MAX_OUTPUT_PORT_TYPE
+ALUControl[2] << Selector10.DB_MAX_OUTPUT_PORT_TYPE
+ALUSrc << MemtoReg.DB_MAX_OUTPUT_PORT_TYPE
+RegDst << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+RegWrite << MemWrite.DB_MAX_OUTPUT_PORT_TYPE
+
+

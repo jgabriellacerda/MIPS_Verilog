@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/Gabriel/Documents/IC/MIPS_Verilog/simulation/modelsim
 vreg_file
-Z1 !s110 1597954536
+Z1 !s110 1598554372
 !i10b 1
 !s100 ?G@HS@C_Z;A:m7SzJ]@C@2
 I]HP?5j6H3T1KDZG7;=fZC0
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1597954536.000000
+Z4 !s108 1598554372.000000
 !s107 C:/Users/Gabriel/Documents/IC/MIPS_Verilog/reg_file.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog|C:/Users/Gabriel/Documents/IC/MIPS_Verilog/reg_file.v|
 !i113 1

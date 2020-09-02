@@ -1,0 +1,18 @@
+`timescale 1ns/1ps
+//Memória de Instrução
+
+module instruction_memory #(parameter DATA_WIDTH = 32, parameter ADDR_WIDTH = 5)
+(
+	input[ADDR_WIDTH - 1 :0] A,
+	output[DATA_WIDTH - 1:0] RD
+
+);
+
+reg [DATA_WIDTH - 1 : 0] rom [(2 ** ADDR_WIDTH) - 1 :0];
+
+initial
+begin
+	$readmemb("program.txt", rom);
+end
+
+assign RD = reg[A];

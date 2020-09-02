@@ -2,14 +2,21 @@
 
 module reg_file (
 						input clk, WE3, reset,        // WE : entrada de enable de escrita 
-						input  [4:0] A1, A2, A3,		// A1(rs) e A2 : entrada de leitura (endereço do reg de origem) - A3(rt) : entrada de escrita (endereço do destino)	
+						input [31:0]Instr,
+						input  [4:0] A3,		// A1(rs) e A2 : entrada de leitura (endereço do reg de origem) - A3(rt) : entrada de escrita (endereço do destino)	
 						input signed  [31:0] WD3,		// WD3 : entrada de escrita de dados da mem. dados
-						output reg [31:0] RD1, RD2				// RD1 E RD2 : saidas de dados
+						output reg [31:0] RD1, RD2,				// RD1 E RD2 : saidas de dados
+						output reg [31:0]SignImm
 						)	;
 
 
 
 reg [0:31] registradores[31:0];
+
+wire [4:0] A1, A2;
+wire [31:0]SignExtend;
+
+assign SignExtend = Instr[15:0];
 
 // inicialização de dois valores para os registers 0 e 1 para teste
 
@@ -19,6 +26,18 @@ initial
 	 registradores[5'b00001] = 32'b00000000000000000000000000000101; //5
 	end
 
+	
+always @ (*)
+	begin
+		if( Instr[15] == 1)
+			begin
+				SignImm = (SignExtend && 32'b11111111111111111111111111111111);
+			end
+		else
+			begin
+				SignImm = (SignExtend && 32'b00000000000000001111111111111111);
+			end
+	end
 
 // leitura (A1)
 	

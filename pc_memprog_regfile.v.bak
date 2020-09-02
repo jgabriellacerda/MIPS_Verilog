@@ -1,0 +1,25 @@
+module pc_progmem_regfile #(parameter NUM_BITS_ADDR_BARRAMENTO = 32, parameter NUM_BITS_MEM_PROG = 32)
+									
+									(
+									input clk, reset, PCSrc, RegWrite, RegDst,
+									output RD1, RD2
+									);
+									
+	wire [31:0]pc;
+	wire [31:0]Instr;
+	
+	instruction_memory instruction_memory (
+														.A(pc),
+														.RD(Instr)
+														)
+														
+	
+	program_counter program_counter ( 
+												.clk(clk),
+												.pc_src(PCSrc),
+												.reset(reset),
+												.sign_imm(),
+												.pc(pc)
+									
+endmodule
+									

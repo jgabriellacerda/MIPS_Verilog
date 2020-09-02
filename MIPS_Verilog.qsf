@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CGXFC7C7F23C8
-set_global_assignment -name TOP_LEVEL_ENTITY reg_file
+set_global_assignment -name TOP_LEVEL_ENTITY pc_memprog_regfile
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:28:05  AUGUST 20, 2020"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
@@ -60,8 +60,12 @@ set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id reg_file_tb
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "100 ns" -section_id reg_file_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME reg_file_tb -section_id reg_file_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE reg_file_tb.v -section_id reg_file_tb
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_SETUP_SCRIPT simulation/modelsim/setup.do -section_id eda_simulation
+set_global_assignment -name VERILOG_FILE program_counter.v
+set_global_assignment -name VERILOG_FILE instruction_memory.v
+set_global_assignment -name VERILOG_FILE Control_Unit.v
+set_global_assignment -name VERILOG_FILE pc_memprog_regfile.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_SETUP_SCRIPT simulation/modelsim/setup.do -section_id eda_simulation
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

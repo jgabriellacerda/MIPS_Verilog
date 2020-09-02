@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Thu Aug 20 17:15:16 2020
+Analysis & Synthesis Status : Successful - Wed Sep 02 20:48:06 2020
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : MIPS_Verilog
-Top-level Entity Name : reg_file
+Top-level Entity Name : pc_memprog_regfile
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 1024
-Total pins : 114
+Total registers : 31
+Total pins : 70
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

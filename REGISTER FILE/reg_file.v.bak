@@ -1,0 +1,19 @@
+`timescale 1ns/1ps
+
+module reg_file (
+						input clk, WE3, reset,           // WE : entrada de enable de escrita 
+						input reg [0:4] A1, A2, A3,		// A1(rs) e A2 : entrada de leitura (endereço do reg de origem) - A3(rt) : entrada de escrita (endereço do destino)	
+						input reg [0:31] WD3,            // WD3 : entrada de escrita de dados da mem. dados
+						output reg RD1, RD2					// RD1 E RD2 : saidas de dados
+						)	
+
+always @ (posedge clk or posedge reset)
+	begin 
+	if (reset)
+		A1 <= 5'd0;
+		A2 <= 5'd0;
+		A3 <= 5'd0;
+	else
+		if (
+						
+endmodule					  

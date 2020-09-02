@@ -1,0 +1,89 @@
+module control
+(
+	input      [31:26] Op, //tamanho [5:0]
+	input      [ 5: 0] Funct,
+	output reg 			 MemtoReg, MemWrite, Branch,
+	output reg [ 2: 0] ALUControl,
+	output reg			 ALUSrc, RegDst, RegWrite
+);
+
+reg [ 1: 0] ALUOp;
+
+always @ (*) begin
+	case (Op)
+			 6'd0 : begin                        // R-type
+						RegWrite <= 1'b1;
+						RegDst   <= 1'b1;
+						ALUSrc   <= 1'b0;
+						Branch   <= 1'b0;
+						MemWrite <= 1'b0;
+						MemtoReg <= 1'b0;
+						ALUOp    <= 2'b10;
+					end
+			 6'd35 : begin                        // lw
+						RegWrite <= 1'b1;
+						RegDst   <= 1'b0;
+						ALUSrc   <= 1'b1;
+						Branch   <= 1'b0;
+						MemWrite <= 1'b0;
+						MemtoReg <= 1'b1;
+						ALUOp    <= 2'b00;
+					end
+			 6'd43 : begin                        // sw
+						RegWrite <= 1'b0;
+						RegDst   <= 1'bx;
+						ALUSrc   <= 1'b1;
+						Branch   <= 1'b0;
+						MemWrite <= 1'b1;
+						MemtoReg <= 1'bx;
+						ALUOp    <= 2'b00;
+						ALUControl <= 2'b10;
+					end
+			 6'd4 : begin                        // beq
+						RegWrite <= 1'b0;
+						RegDst   <= 1'bx;
+						ALUSrc   <= 1'b0;
+						Branch   <= 1'b1;
+						MemWrite <= 1'bx;
+						MemtoReg <= 1'b0;
+						ALUOp    <= 2'b1;
+						ALUControl <= 2'b110;
+					end
+		default: begin
+						RegWrite <= 1'bx;
+						RegDst   <= 1'bx;
+						ALUSrc   <= 1'bx;
+						Branch   <= 1'bx;
+						MemWrite <= 1'bx;
+						MemtoReg <= 1'bx;
+						ALUOp    <= 2'bx;
+					end
+	endcase
+end
+
+always @ (*) begin
+if (ALUOp == 2'b1x) begin
+	case (Funct)
+			 6'd32 : begin                      //add  
+						ALUControl <= 3'b010;
+					end
+			 6'd38 : begin                      //sub  
+						ALUControl <= 3'b110;
+					end
+			 6'd36 : begin                      //and  
+						ALUControl <= 3'b000;
+					end
+					
+			 6'd37 : begin                      //or 
+						ALUControl <= 3'b001;
+					end
+			 6'd42 : begin                      //slt  
+						ALUControl <= 3'b111;
+					end
+		default: begin
+						ALUControl <= 3'bx;
+					end
+	endcase
+end
+end
+endmodule
