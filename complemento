@@ -1,0 +1,42 @@
+wire zero;
+	reg signed [31:0] srcB;
+	wire signed [31:0] aluResult;
+	
+	always @ (*) 
+		begin
+			if (ALUSrc)
+				srcB = RD2 ;
+			else
+				srcB = SignImm; 				
+		end
+	
+	assign PCSrc = zero & Branch;
+	
+	ALU ALU (
+					.SrcA(RD1),
+					.SrcB(srcB),
+					.ALUControl(ALUControl),
+					.ALUResult(aluResult),
+					.Zero(zero)
+				);	
+	
+	wire signed [31:0] ReadData;
+	reg signed [31:0] result;
+
+	always @ (*) 
+		begin
+			if (MemtoReg)
+				esult = ReadData;
+			else
+				result = aluResult;				
+		end
+   
+	data_memory data_memory (
+										.write_ena(MemWrite),
+										.clk(clk),
+										.data_wr(RD2),
+										.addr(aluResult),
+										.data_rd(ReadData)
+									);
+	
+endmodule
