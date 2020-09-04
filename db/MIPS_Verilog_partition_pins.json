@@ -404,6 +404,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "Instr[5]",
+					"strict" : false
+				},
+				{
 					"name" : "Instr[8]",
 					"strict" : false
 				},
@@ -432,6 +436,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "Instr[15]",
+					"strict" : false
+				},
+				{
 					"name" : "Instr[16]",
 					"strict" : false
 				},
@@ -445,6 +453,10 @@
 				},
 				{
 					"name" : "Instr[19]",
+					"strict" : false
+				},
+				{
+					"name" : "Instr[20]",
 					"strict" : false
 				},
 				{
@@ -473,6 +485,14 @@
 				},
 				{
 					"name" : "Instr[27]",
+					"strict" : false
+				},
+				{
+					"name" : "Instr[29]",
+					"strict" : false
+				},
+				{
+					"name" : "Instr[31]",
 					"strict" : false
 				},
 				{
@@ -612,6 +632,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "SignImm[5]",
+					"strict" : false
+				},
+				{
 					"name" : "SignImm[8]",
 					"strict" : false
 				},
@@ -640,6 +664,74 @@
 					"strict" : false
 				},
 				{
+					"name" : "SignImm[15]",
+					"strict" : false
+				},
+				{
+					"name" : "SignImm[16]",
+					"strict" : false
+				},
+				{
+					"name" : "SignImm[17]",
+					"strict" : false
+				},
+				{
+					"name" : "SignImm[18]",
+					"strict" : false
+				},
+				{
+					"name" : "SignImm[19]",
+					"strict" : false
+				},
+				{
+					"name" : "SignImm[20]",
+					"strict" : false
+				},
+				{
+					"name" : "SignImm[21]",
+					"strict" : false
+				},
+				{
+					"name" : "SignImm[22]",
+					"strict" : false
+				},
+				{
+					"name" : "SignImm[23]",
+					"strict" : false
+				},
+				{
+					"name" : "SignImm[24]",
+					"strict" : false
+				},
+				{
+					"name" : "SignImm[25]",
+					"strict" : false
+				},
+				{
+					"name" : "SignImm[26]",
+					"strict" : false
+				},
+				{
+					"name" : "SignImm[27]",
+					"strict" : false
+				},
+				{
+					"name" : "SignImm[28]",
+					"strict" : false
+				},
+				{
+					"name" : "SignImm[29]",
+					"strict" : false
+				},
+				{
+					"name" : "SignImm[30]",
+					"strict" : false
+				},
+				{
+					"name" : "SignImm[31]",
+					"strict" : false
+				},
+				{
 					"name" : "A3[0]",
 					"strict" : false
 				},
@@ -656,27 +748,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "MemtoReg",
-					"strict" : false
-				},
-				{
-					"name" : "ALUSrc",
-					"strict" : false
-				},
-				{
-					"name" : "ALUControl[1]",
-					"strict" : false
-				},
-				{
-					"name" : "ALUControl[2]",
-					"strict" : false
-				},
-				{
-					"name" : "ALUControl[0]",
-					"strict" : false
-				},
-				{
-					"name" : "RegDst",
+					"name" : "A3[4]",
 					"strict" : false
 				},
 				{
@@ -684,19 +756,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "MemWrite",
-					"strict" : false
-				},
-				{
-					"name" : "Branch",
-					"strict" : false
-				},
-				{
 					"name" : "reset",
-					"strict" : false
-				},
-				{
-					"name" : "RegWrite",
 					"strict" : false
 				}
 			]

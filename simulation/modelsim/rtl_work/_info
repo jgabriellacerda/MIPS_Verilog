@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/Gabriel/Documents/IC/MIPS_Verilog/simulation/modelsim
 vALU
-Z1 !s110 1599178197
+Z1 !s110 1599242343
 !i10b 1
 !s100 A>H?a52VT95aLizI=QaVS0
 I4QKk3_=2Q24Uf<gM_^GCf3
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1599178197.000000
+Z4 !s108 1599242343.000000
 !s107 C:/Users/Gabriel/Documents/IC/MIPS_Verilog/ALU.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog|C:/Users/Gabriel/Documents/IC/MIPS_Verilog/ALU.v|
 !i113 1
@@ -31,6 +31,29 @@ Z5 o-vlog01compat -work work
 Z6 !s92 -vlog01compat -work work +incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog
 Z7 tCvgOpt 0
 n@a@l@u
+vControl_Unit
+R1
+!i10b 1
+!s100 D6icY_nAbP1V;]0BYXWF03
+In:bGLf1Mfi?lT@kUU2hUS3
+R2
+R0
+w1599088447
+8C:/Users/Gabriel/Documents/IC/MIPS_Verilog/Control_Unit.v
+FC:/Users/Gabriel/Documents/IC/MIPS_Verilog/Control_Unit.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Gabriel/Documents/IC/MIPS_Verilog/Control_Unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog|C:/Users/Gabriel/Documents/IC/MIPS_Verilog/Control_Unit.v|
+!i113 1
+R5
+R6
+R7
+n@control_@unit
 vinstruction_memory
 R1
 !i10b 1
@@ -56,11 +79,11 @@ R7
 vmy_datamemory
 R1
 !i10b 1
-!s100 z:U=DN5JZg6jj6U>DgAMI2
-IBk?0IFOMJA8:5Laj[hiI;1
+!s100 9m]oV_l44^R@:1DdWA8^f2
+IEBV0g_ao_<eZh;KG[URBX0
 R2
 R0
-w1599173347
+w1599241785
 8C:/Users/Gabriel/Documents/IC/MIPS_Verilog/my_datamemory.v
 FC:/Users/Gabriel/Documents/IC/MIPS_Verilog/my_datamemory.v
 L0 1
@@ -78,11 +101,11 @@ R7
 vpc_memprog_regfile
 R1
 !i10b 1
-!s100 =OiWic@8ZRJW9IAZ?POBQ2
-Ie;CW2HLah0Qo_P]>z`3<j0
+!s100 dzGPB;Rj`=J6=?RVLY<V73
+I7=3obI[RjeGP]@fRjkmRl2
 R2
 R0
-w1599177822
+Z9 w1599240048
 8C:/Users/Gabriel/Documents/IC/MIPS_Verilog/pc_memprog_regfile.v
 FC:/Users/Gabriel/Documents/IC/MIPS_Verilog/pc_memprog_regfile.v
 L0 2
@@ -98,13 +121,13 @@ R5
 R6
 R7
 vpc_memprog_regfile_tb
-R1
+!s110 1599242344
 !i10b 1
-!s100 ma>O:HOF368]aFAM7]0dl3
-I712cg;dMRl`_0ZdJW[U8f1
+!s100 SF5JKfo5?5Og6AD1`kQ=P3
+InII0n:k8W?<O<Q70[m4_G2
 R2
 R0
-w1599177604
+R9
 8C:/Users/Gabriel/Documents/IC/MIPS_Verilog/pc_memprog_regfile_tb.v
 FC:/Users/Gabriel/Documents/IC/MIPS_Verilog/pc_memprog_regfile_tb.v
 L0 2

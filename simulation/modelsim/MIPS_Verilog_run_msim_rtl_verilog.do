@@ -7,6 +7,7 @@ vmap work rtl_work
 
 vlog -vlog01compat -work work +incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog {C:/Users/Gabriel/Documents/IC/MIPS_Verilog/reg_file.v}
 vlog -vlog01compat -work work +incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog {C:/Users/Gabriel/Documents/IC/MIPS_Verilog/program_counter.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog {C:/Users/Gabriel/Documents/IC/MIPS_Verilog/Control_Unit.v}
 vlog -vlog01compat -work work +incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog {C:/Users/Gabriel/Documents/IC/MIPS_Verilog/pc_memprog_regfile.v}
 vlog -vlog01compat -work work +incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog {C:/Users/Gabriel/Documents/IC/MIPS_Verilog/my_datamemory.v}
 vlog -vlog01compat -work work +incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog {C:/Users/Gabriel/Documents/IC/MIPS_Verilog/ALU.v}

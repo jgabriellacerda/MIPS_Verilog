@@ -2,8 +2,7 @@
 module pc_memprog_regfile #(parameter NUM_BITS_ADDR_BARRAMENTO = 32, parameter NUM_BITS_MEM_PROG = 32)
 									
 									(
-									input clk, reset, RegWrite, RegDst, ALUSrc, Branch, MemWrite, MemtoReg,
-									input [2:0] ALUControl,
+									input clk, reset,
 									output reg signed [31:0] Result,
 									output signed [31:0]RD1, RD2, Instr, pc, SignImm,
 									output reg [4:0] A3
@@ -13,6 +12,8 @@ module pc_memprog_regfile #(parameter NUM_BITS_ADDR_BARRAMENTO = 32, parameter N
 	//wire [31:0]Instr;
 	//wire [31:0]SignImm;
 	//reg [4:0]A3;
+	wire MemtoReg, MemWrite, Branch, ALUSrc, RegDst, RegWrite;
+	wire [2:0] ALUControl;
 	
 	always @ (*) 
 		begin
@@ -52,9 +53,9 @@ module pc_memprog_regfile #(parameter NUM_BITS_ADDR_BARRAMENTO = 32, parameter N
 	always @ (*) 
 		begin
 			if (ALUSrc)
-				srcB = SignImm; 
+				srcB = SignImm;
 			else
-				srcB = RD2;				
+				srcB = RD2;
 		end
 	
 	assign PCSrc = zero & Branch;
@@ -65,11 +66,11 @@ module pc_memprog_regfile #(parameter NUM_BITS_ADDR_BARRAMENTO = 32, parameter N
 					.ALUControl(ALUControl),
 					.ALUResult(aluResult),
 					.Zero(zero)
-				);	
+				);
 	
 	wire signed [31:0] ReadData;
 
-	always @ (*) 
+	always @ (*)
 		begin
 			if (MemtoReg)
 				Result = ReadData;
@@ -84,6 +85,15 @@ module pc_memprog_regfile #(parameter NUM_BITS_ADDR_BARRAMENTO = 32, parameter N
 										.addr(aluResult),
 										.data_rd(ReadData)
 									);
+									
+	Control_Unit Control_Unit (
+										.Op(Instr[31:26]), //tamanho [5:0]
+										.Funct(Instr[5:0]),
+										.MemtoReg(MemtoReg), .MemWrite(MemWrite), .Branch(Branch),
+										.ALUControl(ALUControl),
+										.ALUSrc(ALUSrc), .RegDst(RegDst), .RegWrite(RegWrite)
+										);
+		
 									
 endmodule
 									

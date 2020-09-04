@@ -1,18 +1,19 @@
 module my_datamemory
 #(
-	parameter NBITS =  32,
-	parameter ADDRSZ = 32
+	parameter NBITS =  31,   // (32-1) TEM UM RECURSO Q A SUBTRACAO DE UM PARAMETRO POR 1 QUER DIZER Q TODOS OS BITS SAO 1
+	parameter ADDRSZ = 4,
+	parameter MEMSZ = 31	
 )
 (
 	input write_ena,
 	input clk,
-	input signed [NBITS-1:0] data_wr,
-	input [ADDRSZ-1:0] addr,
-	output signed [NBITS-1:0] data_rd
+	input signed [NBITS:0] data_wr,
+	input [ADDRSZ:0] addr,
+	output signed [NBITS:0] data_rd
 	
 );
 
-reg signed [NBITS-1:0] mem[2**ADDRSZ-1:0];
+reg signed [NBITS:0] mem[MEMSZ:0];
 assign data_rd = mem[addr];
 
 always @ (posedge clk) begin
