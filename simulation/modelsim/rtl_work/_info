@@ -8,46 +8,157 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/Gabriel/Documents/IC/MIPS_Verilog/simulation/modelsim
-vreg_file
-Z1 !s110 1598554372
+vALU
+Z1 !s110 1599178197
 !i10b 1
-!s100 ?G@HS@C_Z;A:m7SzJ]@C@2
-I]HP?5j6H3T1KDZG7;=fZC0
+!s100 A>H?a52VT95aLizI=QaVS0
+I4QKk3_=2Q24Uf<gM_^GCf3
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1597954210
-8C:/Users/Gabriel/Documents/IC/MIPS_Verilog/reg_file.v
-FC:/Users/Gabriel/Documents/IC/MIPS_Verilog/reg_file.v
-L0 3
+w1599176528
+8C:/Users/Gabriel/Documents/IC/MIPS_Verilog/ALU.v
+FC:/Users/Gabriel/Documents/IC/MIPS_Verilog/ALU.v
+L0 1
 Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1598554372.000000
-!s107 C:/Users/Gabriel/Documents/IC/MIPS_Verilog/reg_file.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog|C:/Users/Gabriel/Documents/IC/MIPS_Verilog/reg_file.v|
+Z4 !s108 1599178197.000000
+!s107 C:/Users/Gabriel/Documents/IC/MIPS_Verilog/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog|C:/Users/Gabriel/Documents/IC/MIPS_Verilog/ALU.v|
 !i113 1
 Z5 o-vlog01compat -work work
 Z6 !s92 -vlog01compat -work work +incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog
 Z7 tCvgOpt 0
-vreg_file_tb
+n@a@l@u
+vinstruction_memory
 R1
 !i10b 1
-!s100 Y[PYJ_MfD``29<H[8YT=^2
-IYXkI;iz5Lc[ZQFiRX;[hV1
+!s100 @C`?;cSaPliRXhg2<1I9H0
+IY=6M5PI98@iRh>9SQGldC3
 R2
 R0
-w1597954492
-8C:/Users/Gabriel/Documents/IC/MIPS_Verilog/reg_file_tb.v
-FC:/Users/Gabriel/Documents/IC/MIPS_Verilog/reg_file_tb.v
+w1599090456
+8C:/Users/Gabriel/Documents/IC/MIPS_Verilog/instruction_memory.v
+FC:/Users/Gabriel/Documents/IC/MIPS_Verilog/instruction_memory.v
+Z8 L0 11
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Gabriel/Documents/IC/MIPS_Verilog/instruction_memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog|C:/Users/Gabriel/Documents/IC/MIPS_Verilog/instruction_memory.v|
+!i113 1
+R5
+R6
+R7
+vmy_datamemory
+R1
+!i10b 1
+!s100 z:U=DN5JZg6jj6U>DgAMI2
+IBk?0IFOMJA8:5Laj[hiI;1
+R2
+R0
+w1599173347
+8C:/Users/Gabriel/Documents/IC/MIPS_Verilog/my_datamemory.v
+FC:/Users/Gabriel/Documents/IC/MIPS_Verilog/my_datamemory.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Gabriel/Documents/IC/MIPS_Verilog/my_datamemory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog|C:/Users/Gabriel/Documents/IC/MIPS_Verilog/my_datamemory.v|
+!i113 1
+R5
+R6
+R7
+vpc_memprog_regfile
+R1
+!i10b 1
+!s100 =OiWic@8ZRJW9IAZ?POBQ2
+Ie;CW2HLah0Qo_P]>z`3<j0
+R2
+R0
+w1599177822
+8C:/Users/Gabriel/Documents/IC/MIPS_Verilog/pc_memprog_regfile.v
+FC:/Users/Gabriel/Documents/IC/MIPS_Verilog/pc_memprog_regfile.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Gabriel/Documents/IC/MIPS_Verilog/pc_memprog_regfile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog|C:/Users/Gabriel/Documents/IC/MIPS_Verilog/pc_memprog_regfile.v|
+!i113 1
+R5
+R6
+R7
+vpc_memprog_regfile_tb
+R1
+!i10b 1
+!s100 ma>O:HOF368]aFAM7]0dl3
+I712cg;dMRl`_0ZdJW[U8f1
+R2
+R0
+w1599177604
+8C:/Users/Gabriel/Documents/IC/MIPS_Verilog/pc_memprog_regfile_tb.v
+FC:/Users/Gabriel/Documents/IC/MIPS_Verilog/pc_memprog_regfile_tb.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Gabriel/Documents/IC/MIPS_Verilog/pc_memprog_regfile_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog|C:/Users/Gabriel/Documents/IC/MIPS_Verilog/pc_memprog_regfile_tb.v|
+!i113 1
+R5
+R6
+R7
+vprogram_counter
+R1
+!i10b 1
+!s100 N]iEc]:KKmD2i^n[9jjPZ3
+I7XN6QWo7UE7MW8CVXh_?o1
+R2
+R0
+w1599088428
+8C:/Users/Gabriel/Documents/IC/MIPS_Verilog/program_counter.v
+FC:/Users/Gabriel/Documents/IC/MIPS_Verilog/program_counter.v
+R8
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Gabriel/Documents/IC/MIPS_Verilog/program_counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog|C:/Users/Gabriel/Documents/IC/MIPS_Verilog/program_counter.v|
+!i113 1
+R5
+R6
+R7
+vreg_file
+R1
+!i10b 1
+!s100 mi:n=XZ?JK5e;GDh2SSNR0
+IUWISYZQ3WZgI1i41CF21M1
+R2
+R0
+w1599171470
+8C:/Users/Gabriel/Documents/IC/MIPS_Verilog/reg_file.v
+FC:/Users/Gabriel/Documents/IC/MIPS_Verilog/reg_file.v
 L0 3
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:/Users/Gabriel/Documents/IC/MIPS_Verilog/reg_file_tb.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog|C:/Users/Gabriel/Documents/IC/MIPS_Verilog/reg_file_tb.v|
+!s107 C:/Users/Gabriel/Documents/IC/MIPS_Verilog/reg_file.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog|C:/Users/Gabriel/Documents/IC/MIPS_Verilog/reg_file.v|
 !i113 1
 R5
 R6

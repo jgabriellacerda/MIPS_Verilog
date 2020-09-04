@@ -18,6 +18,9 @@ wire [31:0]SignExtend;
 
 assign SignExtend = Instr[15:0];
 
+assign A1 = Instr[25:21];
+assign A2 = Instr[20:16];
+
 // inicialização de dois valores para os registers 0 e 1 para teste
 
 initial 
@@ -29,13 +32,15 @@ initial
 	
 always @ (*)
 	begin
+		//SignImm = ((SignExtend << 16) >>> 16);
+	
 		if( Instr[15] == 1)
 			begin
-				SignImm = (SignExtend && 32'b11111111111111111111111111111111);
+				SignImm = (SignExtend + 32'b11111111111111110000000000000000);
 			end
 		else
 			begin
-				SignImm = (SignExtend && 32'b00000000000000001111111111111111);
+				SignImm = (SignExtend + 32'b00000000000000000000000000000000);
 			end
 	end
 

@@ -1,5 +1,5 @@
 Flow report for MIPS_Verilog
-Wed Sep 02 20:48:06 2020
+Thu Sep 03 21:04:00 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed Sep 02 20:48:06 2020       ;
+; Flow Status                     ; Successful - Thu Sep 03 21:04:00 2020       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; MIPS_Verilog                                ;
 ; Top-level Entity Name           ; pc_memprog_regfile                          ;
@@ -48,8 +48,8 @@ refer to the applicable agreement for further details.
 ; Device                          ; 5CGXFC7C7F23C8                              ;
 ; Timing Models                   ; Final                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 31                                          ;
-; Total pins                      ; 70                                          ;
+; Total registers                 ; 574                                         ;
+; Total pins                      ; 208                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -67,39 +67,44 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/02/2020 20:47:38 ;
+; Start date & time ; 09/03/2020 21:03:44 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MIPS_Verilog        ;
 +-------------------+---------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                      ;
-+----------------------------------------+----------------------------------------+---------------+--------------------+----------------+
-; Assignment Name                        ; Value                                  ; Default Value ; Entity Name        ; Section Id     ;
-+----------------------------------------+----------------------------------------+---------------+--------------------+----------------+
-; COMPILER_SIGNATURE_ID                  ; 251053323211651.159909045815600        ; --            ; --                 ; --             ;
-; EDA_DESIGN_INSTANCE_NAME               ; NA                                     ; --            ; --                 ; reg_file_tb    ;
-; EDA_NATIVELINK_SIMULATION_SETUP_SCRIPT ; simulation/modelsim/setup.do           ; --            ; --                 ; eda_simulation ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH   ; reg_file_tb                            ; --            ; --                 ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT                 ; Verilog Hdl                            ; --            ; --                 ; eda_simulation ;
-; EDA_SIMULATION_TOOL                    ; ModelSim-Altera (Verilog)              ; <None>        ; --                 ; --             ;
-; EDA_TEST_BENCH_ENABLE_STATUS           ; TEST_BENCH_MODE                        ; --            ; --                 ; eda_simulation ;
-; EDA_TEST_BENCH_FILE                    ; reg_file_tb.v                          ; --            ; --                 ; reg_file_tb    ;
-; EDA_TEST_BENCH_MODULE_NAME             ; reg_file_tb                            ; --            ; --                 ; reg_file_tb    ;
-; EDA_TEST_BENCH_NAME                    ; reg_file_tb                            ; --            ; --                 ; eda_simulation ;
-; EDA_TEST_BENCH_RUN_SIM_FOR             ; 100 ns                                 ; --            ; --                 ; reg_file_tb    ;
-; EDA_TIME_SCALE                         ; 1 ps                                   ; --            ; --                 ; eda_simulation ;
-; MAX_CORE_JUNCTION_TEMP                 ; 85                                     ; --            ; --                 ; --             ;
-; MIN_CORE_JUNCTION_TEMP                 ; 0                                      ; --            ; --                 ; --             ;
-; PARTITION_COLOR                        ; -- (Not supported for targeted family) ; --            ; pc_memprog_regfile ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL    ; -- (Not supported for targeted family) ; --            ; pc_memprog_regfile ; Top            ;
-; PARTITION_NETLIST_TYPE                 ; -- (Not supported for targeted family) ; --            ; pc_memprog_regfile ; Top            ;
-; POWER_BOARD_THERMAL_MODEL              ; None (CONSERVATIVE)                    ; --            ; --                 ; --             ;
-; POWER_PRESET_COOLING_SOLUTION          ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --                 ; --             ;
-; PROJECT_OUTPUT_DIRECTORY               ; output_files                           ; --            ; --                 ; --             ;
-; TOP_LEVEL_ENTITY                       ; pc_memprog_regfile                     ; MIPS_Verilog  ; --                 ; --             ;
-+----------------------------------------+----------------------------------------+---------------+--------------------+----------------+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                             ;
++----------------------------------------+----------------------------------------+---------------+--------------------+-----------------------+
+; Assignment Name                        ; Value                                  ; Default Value ; Entity Name        ; Section Id            ;
++----------------------------------------+----------------------------------------+---------------+--------------------+-----------------------+
+; COMPILER_SIGNATURE_ID                  ; 251053323211651.159917782402764        ; --            ; --                 ; --                    ;
+; EDA_DESIGN_INSTANCE_NAME               ; NA                                     ; --            ; --                 ; pc_memprog_regfile_tb ;
+; EDA_DESIGN_INSTANCE_NAME               ; NA                                     ; --            ; --                 ; reg_file_tb           ;
+; EDA_NATIVELINK_SIMULATION_SETUP_SCRIPT ; simulation/modelsim/setup_pc_mp_rf.do  ; --            ; --                 ; eda_simulation        ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH   ; pc_memprog_regfile_tb                  ; --            ; --                 ; eda_simulation        ;
+; EDA_OUTPUT_DATA_FORMAT                 ; Verilog Hdl                            ; --            ; --                 ; eda_simulation        ;
+; EDA_SIMULATION_TOOL                    ; ModelSim-Altera (Verilog)              ; <None>        ; --                 ; --                    ;
+; EDA_TEST_BENCH_ENABLE_STATUS           ; TEST_BENCH_MODE                        ; --            ; --                 ; eda_simulation        ;
+; EDA_TEST_BENCH_FILE                    ; pc_memprog_regfile_tb.v                ; --            ; --                 ; pc_memprog_regfile_tb ;
+; EDA_TEST_BENCH_FILE                    ; reg_file_tb.v                          ; --            ; --                 ; reg_file_tb           ;
+; EDA_TEST_BENCH_MODULE_NAME             ; pc_memprog_regfile_tb                  ; --            ; --                 ; pc_memprog_regfile_tb ;
+; EDA_TEST_BENCH_MODULE_NAME             ; reg_file_tb                            ; --            ; --                 ; reg_file_tb           ;
+; EDA_TEST_BENCH_NAME                    ; reg_file_tb                            ; --            ; --                 ; eda_simulation        ;
+; EDA_TEST_BENCH_NAME                    ; pc_memprog_regfile_tb                  ; --            ; --                 ; eda_simulation        ;
+; EDA_TEST_BENCH_RUN_SIM_FOR             ; 1 us                                   ; --            ; --                 ; pc_memprog_regfile_tb ;
+; EDA_TEST_BENCH_RUN_SIM_FOR             ; 100 ns                                 ; --            ; --                 ; reg_file_tb           ;
+; EDA_TIME_SCALE                         ; 1 ps                                   ; --            ; --                 ; eda_simulation        ;
+; MAX_CORE_JUNCTION_TEMP                 ; 85                                     ; --            ; --                 ; --                    ;
+; MIN_CORE_JUNCTION_TEMP                 ; 0                                      ; --            ; --                 ; --                    ;
+; PARTITION_COLOR                        ; -- (Not supported for targeted family) ; --            ; pc_memprog_regfile ; Top                   ;
+; PARTITION_FITTER_PRESERVATION_LEVEL    ; -- (Not supported for targeted family) ; --            ; pc_memprog_regfile ; Top                   ;
+; PARTITION_NETLIST_TYPE                 ; -- (Not supported for targeted family) ; --            ; pc_memprog_regfile ; Top                   ;
+; POWER_BOARD_THERMAL_MODEL              ; None (CONSERVATIVE)                    ; --            ; --                 ; --                    ;
+; POWER_PRESET_COOLING_SOLUTION          ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --                 ; --                    ;
+; PROJECT_OUTPUT_DIRECTORY               ; output_files                           ; --            ; --                 ; --                    ;
+; TOP_LEVEL_ENTITY                       ; pc_memprog_regfile                     ; MIPS_Verilog  ; --                 ; --                    ;
++----------------------------------------+----------------------------------------+---------------+--------------------+-----------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -107,8 +112,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:28     ; 1.0                     ; 4816 MB             ; 00:01:07                           ;
-; Total                ; 00:00:28     ; --                      ; --                  ; 00:01:07                           ;
+; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 4822 MB             ; 00:00:34                           ;
+; Total                ; 00:00:16     ; --                      ; --                  ; 00:00:34                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
