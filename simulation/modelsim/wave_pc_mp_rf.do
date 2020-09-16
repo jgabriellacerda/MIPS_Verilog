@@ -21,10 +21,12 @@ add wave -noupdate -label ALUSrc /pc_memprog_regfile_tb/pc_memprog_regfile/ALUSr
 add wave -noupdate -label RegDst /pc_memprog_regfile_tb/pc_memprog_regfile/RegDst
 add wave -noupdate -label RegWrite /pc_memprog_regfile_tb/pc_memprog_regfile/RegWrite
 add wave -noupdate -label PCSrc /pc_memprog_regfile_tb/pc_memprog_regfile/PCSrc
+add wave -noupdate -label Jump /pc_memprog_regfile_tb/pc_memprog_regfile/program_counter/Jump
+add wave -noupdate -label PCJump /pc_memprog_regfile_tb/pc_memprog_regfile/program_counter/PCJump
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {84374 ps} 0}
+WaveRestoreCursors {{Cursor 1} {572125 ps} 0}
 quietly wave cursor active 1
-configure wave -namecolwidth 417
+configure wave -namecolwidth 105
 configure wave -valuecolwidth 200
 configure wave -justifyvalue left
 configure wave -signalnamewidth 0
@@ -38,4 +40,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {39368 ps} {85504 ps}
+WaveRestoreZoom {492496 ps} {622698 ps}

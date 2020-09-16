@@ -4,7 +4,7 @@ module Control_Unit
 	input      [ 5: 0] Funct,
 	output reg 			 MemtoReg, MemWrite, Branch,
 	output reg [ 2: 0] ALUControl,
-	output reg			 ALUSrc, RegDst, RegWrite
+	output reg			 ALUSrc, RegDst, RegWrite, Jump
 );
 
 reg [ 1: 0] ALUOp;
@@ -19,6 +19,7 @@ always @ (*) begin
 						MemWrite <= 1'b0;
 						MemtoReg <= 1'b0;
 						ALUOp    <= 2'b10;
+						Jump 		<= 1'b0;
 					end
 			 6'b100011 : begin                        // lw
 						RegWrite <= 1'b1;
@@ -28,6 +29,7 @@ always @ (*) begin
 						MemWrite <= 1'b0;
 						MemtoReg <= 1'b1;
 						ALUOp    <= 2'b00;
+						Jump 		<= 1'b0;
 					end
 			 6'b101011 : begin                        // sw
 						RegWrite <= 1'b0;
@@ -37,6 +39,7 @@ always @ (*) begin
 						MemWrite <= 1'b1;
 						MemtoReg <= 1'bx;
 						ALUOp    <= 2'b00;
+						Jump 		<= 1'b0;
 						
 					end
 			 6'b000100 : begin                        // beq
@@ -47,6 +50,18 @@ always @ (*) begin
 						MemWrite <= 1'bx;
 						MemtoReg <= 1'b0;
 						ALUOp    <= 2'b1;
+						Jump 		<= 1'b0;
+							
+					end
+			 6'b000010 : begin                        // j
+						RegWrite <= 1'b0;
+						RegDst   <= 1'bx;
+						ALUSrc   <= 1'bx;
+						Branch   <= 1'bx;
+						MemWrite <= 1'b0;
+						MemtoReg <= 1'bx;
+						ALUOp    <= 2'bxx;
+						Jump 		<= 1'b1;
 							
 					end
 		default: begin
@@ -57,6 +72,7 @@ always @ (*) begin
 						MemWrite <= 1'bx;
 						MemtoReg <= 1'bx;
 						ALUOp    <= 2'bx;
+						Jump 		<= 1'bx;
 					end
 	endcase
 end

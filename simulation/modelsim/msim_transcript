@@ -12,89 +12,90 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog {C:/Users/Gabriel/Documents/IC/MIPS_Verilog/reg_file.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:59:03 on Sep 04,2020
+# Start time: 16:50:46 on Sep 11,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog" C:/Users/Gabriel/Documents/IC/MIPS_Verilog/reg_file.v 
 # -- Compiling module reg_file
 # 
 # Top level modules:
 # 	reg_file
-# End time: 14:59:03 on Sep 04,2020, Elapsed time: 0:00:00
+# End time: 16:50:46 on Sep 11,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog {C:/Users/Gabriel/Documents/IC/MIPS_Verilog/program_counter.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:59:03 on Sep 04,2020
+# Start time: 16:50:46 on Sep 11,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog" C:/Users/Gabriel/Documents/IC/MIPS_Verilog/program_counter.v 
 # -- Compiling module program_counter
+# ** Warning: C:/Users/Gabriel/Documents/IC/MIPS_Verilog/program_counter.v(26): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
 # 
 # Top level modules:
 # 	program_counter
-# End time: 14:59:03 on Sep 04,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
+# End time: 16:50:46 on Sep 11,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
 # vlog -vlog01compat -work work +incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog {C:/Users/Gabriel/Documents/IC/MIPS_Verilog/Control_Unit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:59:03 on Sep 04,2020
+# Start time: 16:50:46 on Sep 11,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog" C:/Users/Gabriel/Documents/IC/MIPS_Verilog/Control_Unit.v 
 # -- Compiling module Control_Unit
 # 
 # Top level modules:
 # 	Control_Unit
-# End time: 14:59:03 on Sep 04,2020, Elapsed time: 0:00:00
+# End time: 16:50:46 on Sep 11,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog {C:/Users/Gabriel/Documents/IC/MIPS_Verilog/pc_memprog_regfile.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:59:03 on Sep 04,2020
+# Start time: 16:50:46 on Sep 11,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog" C:/Users/Gabriel/Documents/IC/MIPS_Verilog/pc_memprog_regfile.v 
 # -- Compiling module pc_memprog_regfile
 # 
 # Top level modules:
 # 	pc_memprog_regfile
-# End time: 14:59:03 on Sep 04,2020, Elapsed time: 0:00:00
+# End time: 16:50:46 on Sep 11,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog {C:/Users/Gabriel/Documents/IC/MIPS_Verilog/my_datamemory.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:59:03 on Sep 04,2020
+# Start time: 16:50:46 on Sep 11,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog" C:/Users/Gabriel/Documents/IC/MIPS_Verilog/my_datamemory.v 
 # -- Compiling module my_datamemory
 # 
 # Top level modules:
 # 	my_datamemory
-# End time: 14:59:03 on Sep 04,2020, Elapsed time: 0:00:00
+# End time: 16:50:46 on Sep 11,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog {C:/Users/Gabriel/Documents/IC/MIPS_Verilog/ALU.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:59:03 on Sep 04,2020
+# Start time: 16:50:46 on Sep 11,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog" C:/Users/Gabriel/Documents/IC/MIPS_Verilog/ALU.v 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 14:59:03 on Sep 04,2020, Elapsed time: 0:00:00
+# End time: 16:50:46 on Sep 11,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog {C:/Users/Gabriel/Documents/IC/MIPS_Verilog/instruction_memory.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:59:03 on Sep 04,2020
+# Start time: 16:50:46 on Sep 11,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog" C:/Users/Gabriel/Documents/IC/MIPS_Verilog/instruction_memory.v 
 # -- Compiling module instruction_memory
 # 
 # Top level modules:
 # 	instruction_memory
-# End time: 14:59:03 on Sep 04,2020, Elapsed time: 0:00:00
+# End time: 16:50:46 on Sep 11,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog {C:/Users/Gabriel/Documents/IC/MIPS_Verilog/pc_memprog_regfile_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:59:03 on Sep 04,2020
+# Start time: 16:50:46 on Sep 11,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Gabriel/Documents/IC/MIPS_Verilog" C:/Users/Gabriel/Documents/IC/MIPS_Verilog/pc_memprog_regfile_tb.v 
 # -- Compiling module pc_memprog_regfile_tb
 # 
 # Top level modules:
 # 	pc_memprog_regfile_tb
-# End time: 14:59:04 on Sep 04,2020, Elapsed time: 0:00:01
+# End time: 16:50:46 on Sep 11,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  pc_memprog_regfile_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" pc_memprog_regfile_tb 
-# Start time: 14:59:04 on Sep 04,2020
+# Start time: 16:50:47 on Sep 11,2020
 # Loading work.pc_memprog_regfile_tb
 # Loading work.pc_memprog_regfile
 # Loading work.instruction_memory
@@ -103,8 +104,6 @@
 # Loading work.ALU
 # Loading work.my_datamemory
 # Loading work.Control_Unit
-# ** Warning: (vsim-3015) C:/Users/Gabriel/Documents/IC/MIPS_Verilog/pc_memprog_regfile.v(81): [PCDPC] - Port size (5) does not match connection size (32) for port 'addr'. The port definition is at: C:/Users/Gabriel/Documents/IC/MIPS_Verilog/my_datamemory.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /pc_memprog_regfile_tb/pc_memprog_regfile/my_datamemory File: C:/Users/Gabriel/Documents/IC/MIPS_Verilog/my_datamemory.v
 # 
 # do C:/Users/Gabriel/Documents/IC/MIPS_Verilog/simulation/modelsim/setup_pc_mp_rf.do
 # do wave_pc_mp_rf.do
@@ -131,10 +130,12 @@
 # add wave -noupdate -label RegDst /pc_memprog_regfile_tb/pc_memprog_regfile/RegDst
 # add wave -noupdate -label RegWrite /pc_memprog_regfile_tb/pc_memprog_regfile/RegWrite
 # add wave -noupdate -label PCSrc /pc_memprog_regfile_tb/pc_memprog_regfile/PCSrc
+# add wave -noupdate -label Jump /pc_memprog_regfile_tb/pc_memprog_regfile/program_counter/Jump
+# add wave -noupdate -label PCJump /pc_memprog_regfile_tb/pc_memprog_regfile/program_counter/PCJump
 # TreeUpdate [SetDefaultTree]
-# WaveRestoreCursors {{Cursor 1} {84374 ps} 0}
+# WaveRestoreCursors {{Cursor 1} {572125 ps} 0}
 # quietly wave cursor active 1
-# configure wave -namecolwidth 417
+# configure wave -namecolwidth 105
 # configure wave -valuecolwidth 200
 # configure wave -justifyvalue left
 # configure wave -signalnamewidth 0
@@ -148,7 +149,7 @@
 # configure wave -timeline 0
 # configure wave -timelineunits ns
 # update
-# WaveRestoreZoom {39368 ps} {85504 ps}
+# WaveRestoreZoom {492496 ps} {622698 ps}
 # run 1 us
-# End time: 15:05:05 on Sep 04,2020, Elapsed time: 0:06:01
-# Errors: 0, Warnings: 1
+# End time: 18:12:27 on Sep 11,2020, Elapsed time: 1:21:40
+# Errors: 0, Warnings: 0

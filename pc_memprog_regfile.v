@@ -12,7 +12,7 @@ module pc_memprog_regfile #(parameter NUM_BITS_ADDR_BARRAMENTO = 32, parameter N
 	//wire [31:0]Instr;
 	//wire [31:0]SignImm;
 	//reg [4:0]A3;
-	wire MemtoReg, MemWrite, Branch, ALUSrc, RegDst, RegWrite;
+	wire MemtoReg, MemWrite, Branch, ALUSrc, RegDst, RegWrite, PCSrc, Jump;
 	wire [2:0] ALUControl;
 	
 	always @ (*) 
@@ -34,7 +34,9 @@ module pc_memprog_regfile #(parameter NUM_BITS_ADDR_BARRAMENTO = 32, parameter N
 												.pc_src(PCSrc),
 												.reset(reset),
 												.sign_imm(SignImm),
-												.pc(pc)
+												.PC(pc),
+												.Jump(Jump),
+												.Instr(Instr)
 												);
 												
 	reg_file reg_file (
@@ -78,11 +80,13 @@ module pc_memprog_regfile #(parameter NUM_BITS_ADDR_BARRAMENTO = 32, parameter N
 				Result = aluResult;
 		end
    
-	my_datamemory my_datamemory (
+	my_datamemory #(.NBITS(31)) my_datamemory 
+											
+									(
 										.write_ena(MemWrite),
 										.clk(clk),
 										.data_wr(RD2),
-										.addr(aluResult),
+										.addr(aluResult[4:0]),
 										.data_rd(ReadData)
 									);
 									
@@ -91,7 +95,7 @@ module pc_memprog_regfile #(parameter NUM_BITS_ADDR_BARRAMENTO = 32, parameter N
 										.Funct(Instr[5:0]),
 										.MemtoReg(MemtoReg), .MemWrite(MemWrite), .Branch(Branch),
 										.ALUControl(ALUControl),
-										.ALUSrc(ALUSrc), .RegDst(RegDst), .RegWrite(RegWrite)
+										.ALUSrc(ALUSrc), .RegDst(RegDst), .RegWrite(RegWrite), .Jump(Jump)
 										);
 		
 									

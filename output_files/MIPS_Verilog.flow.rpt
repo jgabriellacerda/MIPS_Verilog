@@ -1,5 +1,5 @@
 Flow report for MIPS_Verilog
-Fri Sep 04 15:05:39 2020
+Fri Sep 11 16:50:27 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Fri Sep 04 15:05:39 2020       ;
+; Flow Status                     ; Successful - Fri Sep 11 16:50:27 2020       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; MIPS_Verilog                                ;
 ; Top-level Entity Name           ; pc_memprog_regfile                          ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/04/2020 15:05:03 ;
+; Start date & time ; 09/11/2020 16:49:51 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MIPS_Verilog        ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------+----------------------------------------+---------------+--------------------+-----------------------+
 ; Assignment Name                        ; Value                                  ; Default Value ; Entity Name        ; Section Id            ;
 +----------------------------------------+----------------------------------------+---------------+--------------------+-----------------------+
-; COMPILER_SIGNATURE_ID                  ; 251053323211651.159924270319168        ; --            ; --                 ; --                    ;
+; COMPILER_SIGNATURE_ID                  ; 251053323211651.159985379112964        ; --            ; --                 ; --                    ;
 ; EDA_DESIGN_INSTANCE_NAME               ; NA                                     ; --            ; --                 ; pc_memprog_regfile_tb ;
 ; EDA_DESIGN_INSTANCE_NAME               ; NA                                     ; --            ; --                 ; reg_file_tb           ;
 ; EDA_NATIVELINK_SIMULATION_SETUP_SCRIPT ; simulation/modelsim/setup_pc_mp_rf.do  ; --            ; --                 ; eda_simulation        ;
@@ -112,8 +112,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:37     ; 1.0                     ; 4837 MB             ; 00:01:04                           ;
-; Total                ; 00:00:37     ; --                      ; --                  ; 00:01:04                           ;
+; Analysis & Synthesis ; 00:00:36     ; 1.0                     ; 4838 MB             ; 00:01:07                           ;
+; Total                ; 00:00:36     ; --                      ; --                  ; 00:01:07                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
